@@ -29,7 +29,7 @@
 
 Open [Termux] app, copy and paste the following command in Termux.
 
-Note: Required to install `git` and `ncurses-utils`, skip if already installed!
+Note: Required to install `wget` and `ncurses-utils`, skip if already installed!
 
 ```sh
 pkg install wget
@@ -94,17 +94,6 @@ rm -rf ${PREFIX}/bin/termux-alpine \
     ${HOME}/.alpine
 ```
 
-## Upgrade
-
-Upgrade the installation script.
-
-```sh
-rm -rf ${HOME}/termux-alpine && \
-    cd $HOME && \
-    git clone -b main https://github.com/illvart/termux-alpine.git && \
-    cd termux-alpine
-```
-
 ## Options
 
 ```sh
@@ -140,11 +129,8 @@ Credit to [Hax4us](https://github.com/Hax4us) and [termux](https://github.com/te
 This project is licensed under the **GPL-3.0 License**. See the [LICENSE][2] file for details.
 
 
-[1]: https://github.com/illvart/termux-alpine/releases
-[2]: https://github.com/illvart/termux-alpine/blob/main/LICENSE
+[1]: https://github.com/OneJoseph/termux-alpine/releases
+[2]: https://github.com/OneJoseph/termux-alpine/blob/main/LICENSE
 [Termux]: https://termux.com
-[Patreon]: https://patreon.com/illvart
-[PayPal]: https://www.paypal.me/illvart
-[BuyMeACoffee]: https://www.buymeacoffee.com/illvart
-[Saweria]: https://saweria.co/illvart
+
 
