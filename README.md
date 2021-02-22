@@ -6,11 +6,6 @@
 
 > Bash script for installing **Alpine Linux** in [Termux].
 
-<p align="center">
-  <img src="https://github.com/illvart/termux-alpine/blob/main/ss.png?raw=true" alt="Alpine Linux Termux"/>
-  <br>
-  <em>Check out the other screenshots on my <a href="https://www.instagram.com/p/CEr87gMHUOX/?igshid=15x831l2so1m8">Instagram</a>.</em>
-</p>
 
 ## Table of Contents
 
@@ -37,14 +32,13 @@ Open [Termux] app, copy and paste the following command in Termux.
 Note: Required to install `git` and `ncurses-utils`, skip if already installed!
 
 ```sh
-pkg install -y git
-pkg install -y ncurses-utils
+pkg install wget
 ```
 
 ```sh
 cd $HOME && \
-    git clone -b main https://github.com/illvart/termux-alpine.git && \
-    cd termux-alpine && \
+   
+    wget https://raw.githubusercontent.com/OneJoseph/termux-alpine/main/setup-termux-alpine
     chmod +x setup-termux-alpine
 ```
 
